@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.estgp.njoy.njoy">
+
+    <!--
+         Declare this required feature if you want to make the app available to BLE-capable
+        devices only.  If you want to make your app available to devices that don't support BLE,
+        you should omit this in the manifest.  Instead, determine BLE capability by using
+        PackageManager.hasSystemFeature(FEATURE_BLUETOOTH_LE)
+    -->
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/njoy"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="edu.estgp.njoy.NJoyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="edu.estgp.ble.BluetoothLeService"
+            android:enabled="true" />
+
+        <activity
+            android:name="edu.estgp.njoy.VideoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_video"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="edu.estgp.ble.BluetoothLeScanActivity"
+            android:theme="@android:style/Theme.Holo.Light" />
+
+        <activity
+            android:name="edu.estgp.njoy.SettingsActivity"
+            android:theme="@android:style/Theme.Holo.Light" />
+    </application>
+
+</manifest>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context="edu.estgp.njoy.SettingsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textViewUseTTS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pref_use_tts" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonUseTTS"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_gravity="right"
+            android:text="Ligado" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textViewJoystick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_joystick"
+        android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/spinnerJoystick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewTimeoutMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_timeout_move"
+        android:textSize="20sp" />
+    <SeekBar
+        android:id="@+id/seekBarMove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10000" />
+
+
+    <TextView
+        android:id="@+id/textViewButtonA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/pref_button_A"
+        android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/spinnerButtonA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewButtonB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_button_B"
+        android:textSize="20sp" />
+    <Spinner
+        android:id="@+id/spinnerButtonB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textViewTimeoutButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pref_timeout_buttons"
+        android:textSize="20sp" />
+    <SeekBar
+        android:id="@+id/seekBarButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="10000"
+        android:min="100" />
+
+</LinearLayout>

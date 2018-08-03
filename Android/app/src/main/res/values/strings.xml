@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">NJOY</string>
+
+    <string name="error_bluetooth_not_supported">Bluetooth não suportado.</string>
+
+
+    <string name="connected">Ligado</string>
+    <string name="disconnected">Desligado</string>
+    <string name="title_devices">Joystick</string>
+
+    <string name="unknown_device">Dispositivo desconhecido</string>
+    <string name="unknown_characteristic">Característica desconhecida</string>
+    <string name="unknown_service">Serviço desconhecido</string>
+
+    <string name="title_activity_video">VideoActivity</string>
+
+    <string name="ble_not_supported">BLE não suportado</string>
+
+    <string name="sms_new">Mensagens escritas novas</string>
+    <string name="no_sms">Não tens mensagens novas</string>
+    <string name="sms_number">Tens %d mensagens novas</string>
+    <string name="sms_received">Mensagem de %s: %s</string>
+    <string name="sms_sent">Mensagem enviada</string>
+    <string name="sms_sent_error">Erro ao enviar mensagem</string>
+
+    <!-- Menu items -->
+    <string name="menu_connect">Ligar</string>
+    <string name="menu_disconnect">Desligar</string>
+    <string name="menu_scan">Procurar joystick</string>
+    <string name="menu_stop">Parar</string>
+
+    <!-- General settings -->
+    <string name="title_activity_settings">Definições</string>
+
+    <string name="pref_use_tts">Usar texto falado</string>
+    <string name="pref_description_use_tts">Usar texto falado nos menus</string>
+
+    <string name="pref_joystick">Comportamento do joystick</string>
+    <string name="pref_timeout_move">Timeout para mover seleção</string>
+
+    <string name="pref_button_A">Botão A (verde)</string>
+    <string name="pref_button_B">Botão B (azul)</string>
+    <string name="pref_timeout_buttons">Timeout para fazer reset ao estado dos botões</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="joystick_modes">
+    <item>Varrimento (opção seguinte)</item>
+    <item>Varrimento (opção anterior)</item>
+    <item>Seguinte e anterior</item>
+    <item>Quatro direções</item>
+</string-array>
+</resources>
